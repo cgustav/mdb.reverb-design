@@ -34,6 +34,17 @@ header strong {
 /*///////////////////
 [ SPECIFIC CONTENT ] /*/
 
+header .navbar.bg-customa {
+    background: #1565c0;
+}
+
+.container-fluid .row .col-md-12 .card.card-image {
+    background-image: url(/images/dark-blue-sky.jpg);
+    background-size: cover;
+    background-position: bottom;
+    background-repeat: no-repeat;
+}
+
 .navbar.navbar-light .navbar-nav .nav-item .nav-link {
     color: azure;
     font-weight: bold;
@@ -41,8 +52,9 @@ header strong {
 
 .navbar.navbar-light .navbar-nav .nav-item a {
     color: white;
+    background: #1565c0;
 }
 
-.container .card.wow.fadeIn{
+.container .card.wow.fadeIn {
     background-image: url(/images/gradient1.jpg);
 }
