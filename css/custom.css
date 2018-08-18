@@ -1,0 +1,48 @@
+/*///////////////////
+[ FONTS ] /*/
+
+@font-face {
+    /*Deepest Possible Browser Support*/
+    font-family: Roboto;
+    /*Compatible with IE9*/
+    src: url('../fonts/roboto/Roboto-Medium.eot');
+    /* Safari, Android, iOS */
+    src: url('../fonts/roboto/Roboto-Medium.ttf') format('truetype'), /*Super Modern Browsers*/
+    url('../fonts/roboto/Roboto-Medium.woff2') format('woff2'), /*       Pretty Modern Browsers*/
+    url('../fonts/roboto/Roboto-Medium.woff') format('woff');
+}
+
+/*///////////////////
+[ FULL CONTENT ] /*/
+
+* {
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -o-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-family: Roboto, sans-serif;
+}
+
+header strong {
+    font-family: Roboto, sans-serif;
+}
+
+/*///////////////////
+[ SPECIFIC CONTENT ] /*/
+
+.navbar.navbar-light .navbar-nav .nav-item .nav-link {
+    color: azure;
+    font-weight: bold;
+}
+
+.navbar.navbar-light .navbar-nav .nav-item a {
+    color: white;
+}
+
+.container .card.wow.fadeIn{
+    background-image: url(/images/gradient1.jpg);
+}
