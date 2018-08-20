@@ -12,6 +12,46 @@
     url('../fonts/roboto/Roboto-Medium.woff') format('woff');
 }
 
+@font-face {
+    /*Deepest Possible Browser Support*/
+    font-family: Roboto-regular;
+    /*Compatible with IE9*/
+    src: url('../fonts/roboto/Roboto-Regular.eot');
+    /* Safari, Android, iOS */
+    src: url('../fonts/roboto/Roboto-Regular.ttf') format('truetype'), /*Super Modern Browsers*/
+    url('../fonts/roboto/Roboto-Regular.woff2') format('woff2'), /*       Pretty Modern Browsers*/
+    url('../fonts/roboto/Roboto-Regular.woff') format('woff');
+}
+
+@font-face {
+    /*Deepest Possible Browser Support*/
+    font-family: Roboto-bold;
+    /*Compatible with IE9*/
+    src: url('../fonts/roboto/Roboto-Bold.eot');
+    /* Safari, Android, iOS */
+    src: url('../fonts/roboto/Roboto-Bold.ttf') format('truetype'), /*Super Modern Browsers*/
+    url('../fonts/roboto/Roboto-Bold.woff2') format('woff2'), /*       Pretty Modern Browsers*/
+    url('../fonts/roboto/Roboto-Bold.woff') format('woff');
+}
+
+@font-face {
+    /*Deepest Possible Browser Support*/
+    font-family: Roboto-thin;
+    /*Compatible with IE9*/
+    src: url('../fonts/roboto/Roboto-Thin.eot');
+    /* Safari, Android, iOS */
+    src: url('../fonts/roboto/Roboto-Thin.ttf') format('truetype'), /*Super Modern Browsers*/
+    url('../fonts/roboto/Roboto-Thin.woff2') format('woff2'), /*       Pretty Modern Browsers*/
+    url('../fonts/roboto/Roboto-Thin.woff') format('woff');
+}
+
+@font-face {
+    /*Deepest Possible Browser Support*/
+    font-family: Ibm-plex;
+    /* Safari, Android, iOS */
+    src: url('../fonts/ibm_plex_sans/IBMPlexSans-Regular.ttf') format('truetype');
+}
+
 /*///////////////////
 [ FULL CONTENT ] /*/
 
@@ -31,6 +71,14 @@ header strong {
     font-family: Roboto, sans-serif;
 }
 
+body.joke {
+    background-image: url(/images/arctic-monkeys.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+}
+main .container.fluid .jokeando{
+    background-color: rgba(0, 0, 0, 0.915);
+}
 /*///////////////////
 [ SPECIFIC CONTENT ] /*/
 
@@ -43,23 +91,52 @@ header .navbar.bg-customa {
 header .navbar.navbar-light .navbar-nav .nav-item .nav-link {
     color: azure;
     font-weight: bold;
+    font-family: Ibm-plex, sans-serif;
 }
+
+header .nav-link {
+    text-decoration: none;
+}
+
+header .navbar.navbar-light .navbar-nav .nav-item .nav-link:hover {
+    color: #00bcd4
+}
+
+/*
+header .navbar .nav-flex-icons .nav-item .nav-link .fab.fa-github.mr-2:hover {
+    color: #8A2387;
+}
+*/
 
 header .navbar.navbar-light .navbar-nav .nav-item a {
     color: white;
     background: #1565c0;
 }
 
-header.container-fluid .btn.collapse-jumbo {
+header .btn.collapse-jumbo {
     border-radius: 0;
+    color: azure;
 }
 
-header.container-fluid .collapse .row .col .card.card-image {
+header .btn.collapse-jumbo:hover {
+    border-radius: 0;
+    color: #ffff;
+}
+
+header .collapse .row .col .card.card-image {
     border-radius: 0;
     background-image: url(/images/dark-blue-sky.jpg);
     background-size: cover;
     background-position: bottom;
     background-repeat: no-repeat;
+}
+
+header .collapse h2 {
+    font-family: Roboto-regular;
+}
+
+header .collapse p {
+    font-family: Ibm-plex;
 }
 
 /*Main content*/
@@ -70,4 +147,8 @@ main .container {
 
 main .container .card.wow.fadeIn {
     background-image: url(/images/gradient1.jpg);
+}
+
+footer .pt-4 .btn {
+    font-family: Roboto-thin;
 }
