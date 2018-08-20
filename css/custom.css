@@ -34,27 +34,40 @@ header strong {
 /*///////////////////
 [ SPECIFIC CONTENT ] /*/
 
+/*Header*/
+
 header .navbar.bg-customa {
     background: #1565c0;
 }
 
-.container-fluid .row .col-md-12 .card.card-image {
+header .navbar.navbar-light .navbar-nav .nav-item .nav-link {
+    color: azure;
+    font-weight: bold;
+}
+
+header .navbar.navbar-light .navbar-nav .nav-item a {
+    color: white;
+    background: #1565c0;
+}
+
+header.container-fluid .btn.collapse-jumbo {
+    border-radius: 0;
+}
+
+header.container-fluid .collapse .row .col .card.card-image {
+    border-radius: 0;
     background-image: url(/images/dark-blue-sky.jpg);
     background-size: cover;
     background-position: bottom;
     background-repeat: no-repeat;
 }
 
-.navbar.navbar-light .navbar-nav .nav-item .nav-link {
-    color: azure;
-    font-weight: bold;
+/*Main content*/
+
+main .container {
+    margin-top: 2vh;
 }
 
-.navbar.navbar-light .navbar-nav .nav-item a {
-    color: white;
-    background: #1565c0;
-}
-
-.container .card.wow.fadeIn {
+main .container .card.wow.fadeIn {
     background-image: url(/images/gradient1.jpg);
 }
