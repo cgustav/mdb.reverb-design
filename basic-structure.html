@@ -1,7 +1,8 @@
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
-    <title>Basic Structure - Material Design for Bootstrap Practice</title>
+    <title>Reverb Project v.0.1.2 - MDB Practice Practice</title>
     <!--===========================================================================-->
     <meta charset="utf-8" />
     <meta name="description" content="Reverb Design Web Project">
@@ -10,7 +11,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <!--===========================================================================-->
-    <link rel='shortcut icon' href='YOURFAVICON.ico' type='image/x-icon' />
+    <link rel='shortcut icon' href='/images/icon/rockrms-orange.ico' type='image/x-icon' />
     <!--========================Fontawesome========================================-->
     <link rel="stylesheet" href="css/all.min.css" title="related" />
     <!--===========================================================================-->
@@ -22,48 +23,54 @@
     <!--===========================================================================-->
     <link rel="stylesheet" type="text/css" media="screen" href="css/custom.css" title="related" />
     <!--===========================================================================-->
+    <link rel="stylesheet" type="text/css" media="screen" href="css/colors.css" title="related" />
+    <!--===========================================================================-->
+
 </head>
 
 <body>
-
-    <header>
-
-
+    <header class="container-fluid fixed-top px-0">
         <!--Main Navbar-->
-        <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-customa scrolling-navbar">
-            <div class="container-fluid ">
-
+        <nav class="navbar navbar-expand-lg navbar-dark bg-customa scrolling-navbar mb-0" role="navigation">
+            <div class="container-fluid">
+    
                 <!--Brand-->
                 <a href="/home.html" class="navbar-brand waves-effect">
                     <strong class="white-text stronger">
-                        <i class="fas fa-cannabis shovel"></i> REVERB
+                        <i class="fab fa-rockrms"></i> REVERB
                     </strong>
                 </a>
                 <!--END: Brand-->
-
+                <!--TODO: Working on sidenav-->
+    
                 <!--Collapse-->
-                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#zenCollapsible" aria-controls="zenCollapsible"
+    
+                <button type="button" class="navbar-toggler navbar-toggler-left" data-toggle="collapse" data-target="#zenCollapsible" aria-controls="zenCollapsible"
                     aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-
+    
+    
                 <!--List of links-->
-                <div class="collapse navbar-collapse " id="zenCollapsible">
-                    <ul class="navbar-nav mr-auto ">
-                        <li class="nav-item active ">
-                            <a href="/apps.html" class="nav-link waves-effect waves-light">Apps</a>
-                        </li>
+                <div class="collapse navbar-collapse pl-2" id="zenCollapsible" style="margin-right:auto; margin-left:0px;">
+                    <ul class="navbar-nav mr-auto">
                         <li class="nav-item">
-                            <a href="/basic-structure.html" class="nav-link waves-effect waves-light">Blog</a>
+                            <a href="/apps.html" class="nav-link waves-effect waves-light"> Apps</a>
                         </li>
-                        <li class="nav-item">
-                            <a href="/contact.html" class="nav-link waves-effect waves-light">Contact</a>
+                        <hr class=".d-sm-none .d-md-block my-1 py-0">
+                        <li class="nav-item ">
+                            <a href="/basic-structure.html" class="nav-link waves-effect waves-light"> Blog</a>
                         </li>
-                        <li class="nav-item">
-                            <a href="#" class="nav-link waves-effect waves-light">About</a>
+                        <hr class=".d-sm-none .d-md-block my-1 py-0">
+                        <li class="nav-item ">
+                            <a href="/contact.html" class="nav-link waves-effect waves-light"> Contact</a>
+                        </li>
+                        <hr class=".d-sm-none .d-md-block my-1 py-0">
+                        <li class="nav-item ">
+                            <a href="/about.html" class="nav-link waves-effect waves-light"> About</a>
                         </li>
                     </ul>
-
+    
                     <!--Collpased List of Links-->
                     <ul class="navbar-nav nav-flex-icons">
                         <li class="nav-item">
@@ -77,16 +84,51 @@
                             </a>
                         </li>
                         <li class="nav-item">
-
+    
                             <a href="#" class="nav-link waves-effect waves-light">
                                 <i class="fab fa-github mr-2"></i>
                             </a>
                         </li>
                     </ul>
+                    <form class="form-inline">
+    
+                    </form>
                 </div>
             </div>
         </nav>
-
+        <!--END: NAVBAR-->
+    
+        <!--Toggeable Jumbotron-->
+    
+        <a class="btn wiretap collapse-jumbo mx-0 w-100 my-0" data-toggle="collapse" href="#collapseExample" aria-expanded="false"
+            aria-controls="collapseExample">
+            Reverb Project v0.1.2 is Here!
+        </a>
+    
+        <div class="collapse mt-0" id="collapseExample">
+            <div class="row mb-5 wow fadeIn accent-1">
+                <div class="col col-md-12">
+                    <div class="card card-image">
+                        <div class="text-white text-center rgba-stylish-strong">
+                            <div class="py-4">
+    
+                                <!--Content-->
+                                <h6 class="wiretap-color font-bold"><i class="fab fa-gg"></i> By Gorig Chelsin</h6>
+                                <h2 class="card-title pt-3 mb-5 font-bold"><i class="fab fa-rockrms"></i> REVERB v.0.1.2</h2>
+                                <p class="px-5 pb-4">Help us to improve, contribute and let your impressions in our official
+                                    github repository. Also you can send your feedback through our official user form. </p>
+                                <a class="btn btn-outline-danger  waves-effect waves-light "><i class="fab fa-github"></i>
+                                    Go git</a>
+                                <!--Content-->
+    
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+    
         <!--End Navbar-->
     </header>
 
@@ -101,12 +143,12 @@
         <!--Call to action-->
         <div class="pt-4">
             <a href="#!" class="btn btn-outline-white" role="button">
-                <i class="fa fa-download ml-2"> Download APPS
-                </i>
+                <i class="fa fa-download ml-2"></i> Download ReGradient CSS
+    
             </a>
             <a href="#!" class="btn btn-outline-white" role="button">
-                <i class="fa fa-graduation-cap ml2"> Start Free Tutorial
-                </i>
+                <i class="fa fa-graduation-cap ml2"></i> Start Free Tutorial
+    
             </a>
         </div>
         <!--END: Call to Action-->

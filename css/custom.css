@@ -71,14 +71,20 @@ header strong {
     font-family: Roboto, sans-serif;
 }
 
+/*///////////*/
+
+/*FIXME:*/
+
 body.joke {
     background-image: url(/images/arctic-monkeys.jpg);
     background-attachment: fixed;
     background-size: cover;
 }
-main .container.fluid .jokeando{
+
+main .container.fluid .jokeando {
     background-color: rgba(0, 0, 0, 0.915);
 }
+
 /*///////////////////
 [ SPECIFIC CONTENT ] /*/
 
@@ -88,7 +94,23 @@ header .navbar.bg-customa {
     background: #1565c0;
 }
 
-header .navbar.navbar-light .navbar-nav .nav-item .nav-link {
+/*
+header .navbar.navbar-expand-lg.navbar-dark .collapse.navbar-collapse .navbar-nav {
+    margin-left:160px;
+    padding-left: 20px;
+}
+
+header .navbar.navbar-expand-lg.navbar-dark .collapse.navbar-collapse .navbar-nav .nav-item {
+    
+    padding-right: 30px;
+}
+
+header .navbar.navbar-expand-lg.navbar-dark .collapse.navbar-collapse .navbar-nav.nav-flex-icons .nav-item {
+    padding-right:5px;
+}
+*/
+
+header .navbar.navbar-dark .navbar-nav .nav-item .nav-link {
     color: azure;
     font-weight: bold;
     font-family: Ibm-plex, sans-serif;
@@ -98,8 +120,20 @@ header .nav-link {
     text-decoration: none;
 }
 
-header .navbar.navbar-light .navbar-nav .nav-item .nav-link:hover {
+header .navbar.navbar-dark .navbar-nav .nav-item .nav-link:hover {
     color: #00bcd4
+}
+
+.navbar.navbar-light .breadcrumb .nav-item.active>.nav-link:hover,
+.navbar.navbar-light .navbar-nav .nav-item.active>.nav-link:hover,
+.navbar.navbar-light .navbar-toggler,
+.navbar.navbar-light form .md-form .form-control {
+    color: #fff;
+}
+
+header .navbar.navbar-light.bg-customa .navbar-toggler,
+.navbar.navbar-light.bg-customa .navbar-toggler .navbar-toggler-icon {
+    color: #fff;
 }
 
 /*
@@ -146,9 +180,26 @@ main .container {
 }
 
 main .container .card.wow.fadeIn {
-    background-image: url(/images/gradient1.jpg);
+    background-image: url(/images/blur-swall.jpg);
 }
 
 footer .pt-4 .btn {
     font-family: Roboto-thin;
+}
+
+footer.page-footer.mdb-color {
+    background-image: -webkit-linear-gradient(to right, #3a6073, #3a7bd5);
+}
+
+.gradient-custom {
+    background: #3a7bd5;
+    background: -webkit-linear-gradient(to right, #3a6073, #3a7bd5);
+    background: -webkit-gradient(linear, left top, right top, from(#3a6073), to(#3a7bd5));
+    background: -webkit-linear-gradient(left, #3a6073, #3a7bd5);
+    background: -o-linear-gradient(left, #3a6073, #3a7bd5);
+    background: linear-gradient(to right, #3a6073, #3a7bd5)
+}
+
+.card-comments img {
+    width: 4rem
 }
